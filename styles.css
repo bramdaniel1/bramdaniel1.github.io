@@ -1,0 +1,193 @@
+/* Your CSS styling goes here */
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Product listing styles */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  display: block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Cart styles */
+.cart {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 300px;
+  max-height: 500px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.cart h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cart .product {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.cart .product img {
+  max-width: 60px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.cart .product h4 {
+  margin: 0;
+}
+
+.cart .product .price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cart .checkout-btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Checkout styles */
+.checkout {
+  display: none;
+  padding: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.checkout form input,
+.checkout form textarea,
+.checkout form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.checkout form button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
