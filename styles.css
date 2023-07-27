@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #b8b3a2;
 }
 
 .container {
@@ -208,7 +208,7 @@ nav .main-menu li a:hover {
   padding: 40px;
   max-width: 500px;
   margin: 0 auto;
-  background-color: #f9f9f9;
+  background-color: #717070;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
