@@ -12,12 +12,38 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
             font-family: Arial, sans-serif;
         }
+
         h1 {
             font-size: 5rem;
             text-align: center;
+
+            /* Gradient text */
+            background: linear-gradient(
+                90deg,
+                white,
+                #ffcc80,
+                white
+            );
+            background-size: 200% auto;
+            background-position: 0% center;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            from {
+                background-position: 0% center;
+            }
+            to {
+                background-position: 200% center;
+            }
         }
     </style>
 </head>
@@ -25,6 +51,7 @@
     <h1>Coming Soon</h1>
 </body>
 </html>
+
 
 
 
